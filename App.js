@@ -33,7 +33,6 @@ export default class App extends React.Component {
     const rlo = this.state.mapRegion.longitude;
     const la = latLon.latitude;
     const lo = latLon.longitude;
-    console.log("event pressed here: ", rla, rlo);
     const url = `http://maps.apple.com/?saddr=${rla},${rlo}&daddr=${la},${lo}&dirflg=d`;
     return Linking.openURL(url);
   };
